@@ -1,0 +1,738 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: hsl(257, 7%, 63%);
+    -webkit-tap-highlight-color: transparent;
+    word-wrap: break-word;
+}
+body{
+    font-size: 18px;
+    font-weight: 500;
+    bottom: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header a{
+    font-weight: 700;
+}
+button{
+    padding: .5rem 2rem;
+    background-color: hsl(180, 66%, 49%);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+/************
+Typography
+*************/
+h1{
+    font-size: 2.8rem;
+    line-height: 3rem;
+    word-spacing: .7px;
+}
+p{
+    line-height: 2rem;
+}
+/*************
+header
+**************/
+header{
+    width: 90%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+/*********
+heading
+**********/
+h1,h2,h3,h4{
+    color: hsl(255, 11%, 22%);
+}
+/*********
+navbar
+*********/
+header nav{
+    width: 100%;
+}
+nav,nav ul{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-top: 1rem;
+}
+
+nav ul{
+    width :80%;
+    margin: 1rem auto;
+}
+.navbar {
+    margin-top: 3rem;
+    background-color: hsl(257, 27%, 26%);
+    border-radius: 1rem;
+    position: absolute;
+    width: 90%;
+    display: block;
+    max-width: 370px;
+    right: 5%;
+}
+.navbar li{
+    margin: 1rem;
+  
+}
+.fea{
+    border-bottom: .5px solid  hsl(0, 0%, 75%);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+.navbar button{
+    padding: .5rem 4rem;
+    border-radius: 1rem;
+}
+.navbar  a
+{
+    color: white;
+    font-weight: 700;
+}
+/**********
+toggle
+**********/
+.toggle{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    right: 2.3rem;
+    top : 1.5rem;
+    width: 28px;
+    height: 24px;
+}
+.bar{
+    width: 100%;
+    height: 3px;
+    background-color:hsl(257, 7%, 63%);
+}
+nav{
+    display: none;
+ }
+ /**************
+ main
+ ***************/
+ main{
+     overflow:hidden;
+ }
+ /**********
+ section-1
+ ***********/
+ .section-1{
+     display: flex;
+     flex-direction: column;
+     justify-content:space-around;
+ }
+ .section-1 img{
+     order:-1;
+     width: 110%;
+     margin-left: 5%;
+     margin-right: -10%;
+ }
+ .content{
+   max-width: 700px;
+   width: 95%;
+   margin: 2rem auto;
+ }
+ .content h1{
+    margin: 1rem auto;
+ }
+ .content p{
+     margin: 1rem;
+ }
+ .content button{
+     border-radius: 2rem;
+     padding: .9rem 3rem;
+     margin: 1rem auto;
+ }
+ /**********
+ section-2
+ **********/
+ .section-2{
+     background-image: linear-gradient(to bottom,white 50%,hsla(266, 33%, 96%, 0.884) 50%);
+ }
+
+ /***********
+ Input
+ ************/
+ .shorten{
+     background-image: url("./images/bg-shorten-mobile.svg");
+     background-position: right top;
+     background-repeat: no-repeat;
+     background-color: hsl(257, 27%, 26%);
+     width: 90%;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     padding: 2rem;
+ }
+ .input{
+     width: 100%;
+ }
+ input{
+     width: 100%;
+     margin: 1rem 0rem;
+     padding: 1rem;
+     text-align: left;
+     height: 3rem;
+     font-size: 18px;
+     outline: none;
+     border-radius: .4rem;
+ }
+ .shorten button{
+     border-radius: .4rem;
+ }
+ .error input{
+     border : .2rem solid  hsl(0, 87%, 67%);
+ }
+ .error p{
+     text-align: left;
+     color:  hsl(0, 87%, 67%);
+ }
+ .error input{
+      margin-bottom: 0;
+ }
+ .error input::placeholder{
+    color:  hsl(0, 95%, 76%);
+ }
+ /***********
+ section-3
+ ***********/
+ .section-3{
+     background-color:hsla(266, 33%, 96%, 0.884);
+     padding: 1rem;
+     padding-top: 5rem;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+ .section-3 p{
+     max-width: 500px;
+     margin: 0 auto;
+ }
+ /**********
+ section-4
+ ***********/
+ .section-4{
+     background-color: hsla(266, 33%, 96%, 0.884);
+     padding: 1rem 0rem;
+     display: flex;
+     position: relative;
+     flex-direction: column;
+ }
+ .section-4::after{
+    position: absolute;
+    content: "";
+    left: 49.6%;
+    top: 20%;
+    height: 50%;
+    width: .5rem;
+    background-color: hsl(180, 66%, 49%);
+}
+ .section-4 .box{
+     position: relative;
+     width: 90%;
+     background-color: white;
+     margin: 0 auto;
+     padding: .75rem;
+     padding-bottom: 2rem;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin: 3rem auto;
+     border-radius: .3rem;
+     z-index: 1;
+     max-width: 800px;
+ }
+ .section-4 .icon{
+     background-color: hsl(257, 27%, 26%);
+     width: 90px;
+     height: 90px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border-radius: 100%;
+     margin: 2rem 0;
+     margin-top: -3.5rem;
+     order: -1;
+ }
+
+ /************
+ section-5
+ *************/
+ .section-5{
+    background-image: url("./images/bg-boost-mobile.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: hsl(257, 27%, 26%);
+    padding: 6rem 0rem;
+ }
+ .section-5 h2{
+     color: white;
+     margin: 1rem;
+ }
+ .section-5 button{
+     border-radius: 3rem;
+     padding: .8rem 2.5rem;
+ }
+ /*********
+ footer
+ *********/
+ footer{
+     padding: 3rem 0rem;
+     background-color: hsl(260, 8%, 14%);
+     padding-bottom: 0rem;
+     bottom: 0;
+ }
+ .social{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+ }
+ .social img{
+     margin: 1rem .5rem;
+ }
+ .logo{
+     color: white;
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin-bottom: 2rem;
+ }
+ footer div{
+     margin-top: 3rem;
+     color: hsl(0, 0%, 75%);
+ }
+ footer div h4{
+     color: white;
+     font-weight: 700;
+     margin: 1rem;
+ }
+ footer li{
+     margin: .5rem;
+ }
+ .twiter{
+     margin-top: 2rem;
+ }
+ /************
+ hover
+ *************/
+ button:hover{
+     background-color: hsl(180, 78%, 69%);
+     font-weight: 700;
+     cursor: pointer;
+ }
+ header a:hover{
+     color: hsl(257, 27%, 26%);
+ }
+ footer a:hover{
+     color:hsl(180, 66%, 49%);
+ }
+ /***********
+    links
+************/
+    .links{
+        background-color:hsla(266, 33%, 96%, 0.884);
+        padding : 20px 0; 
+        color: hsl(260, 8%, 14%);
+    }
+    .link{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .link button{
+        margin-left: 20px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+    #link{
+        width :100%;
+    }
+    .link span{
+        overflow: hidden;
+        margin: 10px 1px;
+        color: hsl(260, 8%, 14%);
+        padding: 2px;
+    }
+    #srt{
+        color: hsl(180, 66%, 49%);
+    }
+ @media(min-width:1100px) {
+    h1{
+        font-size: 4.5rem;
+        line-height: 5rem;
+        word-spacing: -2px;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    /*************
+    header
+    **************/
+    .toggle{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .fea{
+        border: none;
+    }
+    header{
+        width: 80%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        flex-direction: row;
+    }
+    nav{
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-between;
+        align-items: unset;
+    }
+    .fea{
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: row;
+        padding-left: 1rem;
+    }
+    .login-side{
+         justify-content: right;
+         flex-direction: row;
+         padding-left: 2rem;
+    }
+    nav li{
+        margin-left: 1.6rem;
+    }
+    .logo{
+        margin-top: .3rem;
+    }
+    .login{
+        margin-top: .4rem;
+    }
+    nav button{
+        border-radius: 2rem;
+    }
+    /************
+     section-1
+    *************/
+      .section-1{
+          width: 90%;
+          margin-left: 10%;
+          flex-direction: row;
+          justify-content: space-between;
+          padding: 0;
+      }
+      .section-1 img{
+          order: 1;
+          width: 60%;
+          margin-right: -150px;
+      }
+      .content{
+          margin: 2rem 0;
+          width: 45%;
+          padding-top: 2rem;
+      }
+      .content , .content h1,.content p{
+          margin: 1rem 0;
+          text-align: left;
+      }
+      .content p{
+          padding-right: 6rem;
+      }
+    /************
+     section-2
+    *************/
+    .section-2{
+        padding: 3rem 0;
+    }
+    .shorten{
+        background-image: url("./images/bg-shorten-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 4rem;
+    }
+    .input{
+        width: 80%;
+    }
+    input{
+        width: 100%;
+        height: 4rem;
+        border-radius: .6rem;
+        outline: none;
+        border: none;
+    }
+    .shorten button{
+        margin: 1rem 0;
+        border-radius: .6rem;
+    }
+    /************
+    error
+    *************/
+    .error button{
+        margin-bottom: 2rem;
+    }
+     /************
+     section-3
+    *************/
+    .section-3 p{
+        width: 37%;
+        margin: 1rem auto;
+
+    }
+    /***********
+    links
+    ************/
+    .links{
+        background-color:hsla(266, 33%, 96%, 0.884);
+    }
+    .link{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        background-color: white;
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .link button{
+        margin-left: 20px;
+        border-radius: 3px;
+        margin-top: 0;
+    }
+    #link{
+        width: 60%;
+        text-align: left;
+    }
+    /************
+    section-4
+    *************/
+    .section-4{
+        background-color: hsla(266, 33%, 96%, 0.884);
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 5rem 10%;
+    }
+    .section-4 .box{
+        width: 31%;
+        margin: 0;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        padding-right: 1rem;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .section-4 .box p{
+        font-size: 16px;
+        text-align: left;
+        margin-top: 1rem;
+    }
+    .section-4 .box-1{
+         height: 96%;
+    }
+    .section-4 .box-2{
+        margin-top: 4%;
+        height: 96%;
+    }
+    .section-4 .box-3{
+        margin-top: 8%;
+    }
+    .section-4::after{
+        position: absolute;
+        content: "";
+        left: 10%;
+        top: 45%;
+        height: .5rem;
+        width: 70%;
+        background-color: hsl(180, 66%, 49%);
+    }
+    /************
+    section-5
+    *************/
+    .section-5{
+        background-image: url("./images/bg-boost-desktop.svg");
+        padding: 3.7rem 0rem;
+    }
+    /************
+    footer
+    ***********/
+    .foot{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .foot .logo{
+        width: 20%;
+        color: white;
+        font-size: 2rem;
+       text-align: left;
+    }
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .foot div{
+        margin: 1rem 0rem;
+        color: hsl(0, 0%, 75%);
+    }
+    footer div h4{
+        color: white;
+        font-weight: 700;
+        margin: 1rem;
+        margin-top: .7rem;
+        text-align: left;
+    }
+    footer ul{
+        text-align: left;
+    }
+    footer li{
+        margin: 1rem;
+        text-align: left;
+    }
+    .social{
+        justify-content: start;
+        align-items: flex-start;
+    }
+ }
+ @media(max-width: 1340px) and (min-width: 1100px)
+ {
+    h1{
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    h2{
+        font-size: 2.8rem;
+    }
+    /************
+     section-2
+    *************/
+    .section-2{
+        padding: 3rem 0;
+    }
+    .input{
+        width: 74%;
+    }
+    input{
+        height: 4rem;
+        border-radius: .6rem;
+        margin: 1rem 0;
+        outline: none;
+        border: none;
+    }
+    .shorten button{
+        margin: 1rem 0;
+        border-radius: .6rem;
+    }
+ }
+ @media(max-width: 1099px) and (min-width: 700px)
+ {    /*************
+    header
+    **************/
+    .toggle{
+        display: none;
+    }
+    nav{
+        display: flex;
+    }
+    .fea{
+        border: none;
+    }
+    header{
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 0;
+        flex-direction: row;
+    }
+    nav{
+        flex-direction: row;
+        margin: 0;
+        justify-content: space-between;
+        align-items: unset;
+    }
+    .fea{
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: row;
+        /* padding-left: 1rem; */
+    }
+    .login-side{
+         justify-content: right;
+         flex-direction: row;
+         padding-left: 1rem;
+    }
+    nav li{
+        margin-left: 1rem;
+        font-size: 14px;
+    }
+    .logo{
+        margin-top: .3rem;
+    }
+    .login{
+        margin-top: .4rem;
+    }
+    nav button{
+        border-radius: 2rem;
+        font-size: 14px;
+    }
+    /**********
+    main
+    ***********/
+    .section-1{
+        width: 100%;
+        margin-left: 5%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        margin-bottom: 4rem;
+    }
+    .section-1 img{
+        order: 1;
+        width: 60%;
+    }
+    .content{
+        margin: 2rem 0;
+        width: 50%;
+        padding-top: 2rem;
+    }
+    .content , .content h1,.content p{
+        margin: 1rem 0;
+        text-align: left;
+    }
+    .content p{
+        padding-right: 3rem;
+    } 
+ }

@@ -322,7 +322,7 @@ nav{
      margin-top: 3rem;
      color: hsl(0, 0%, 75%);
  }
- footer div h4{
+ footer div .h4{
      color: white;
      font-weight: 700;
      margin: 1rem;
@@ -616,7 +616,7 @@ nav{
         margin: 1rem 0rem;
         color: hsl(0, 0%, 75%);
     }
-    footer div h4{
+    footer div .h4{
         color: white;
         font-weight: 700;
         margin: 1rem;
